@@ -7,7 +7,7 @@
     "npm": "5.0.3"
   },
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node server.js"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
