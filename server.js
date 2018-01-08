@@ -24,11 +24,6 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-app.get('/',
-  (req, res) => {
-    res.send({title:'My API route handler',description:'Powered By Express'})
-  }
-);
 // load route handlers
 require('./routes/authRoutes')(app);
 
