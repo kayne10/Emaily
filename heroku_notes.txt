@@ -1,0 +1,2 @@
+This command grabs our heroku remote
+git remote add heroku https://git.heroku.com/sleepy-inlet-85390.git
