@@ -1,2 +1,16 @@
 This command grabs our heroku remote
 git remote add heroku https://git.heroku.com/sleepy-inlet-85390.git
+
+For Deployment to Heroku
+vist https://circleci.com/ for Continuos Integration and Testing
+
+To make sure Heroku gets Client dependencies,
+'heroku-postbuild' command will do so
+
+To tell Heroku to run server,
+'npm run build'
+This will install dependencies to disk on Heroku
+
+To accomplish this, edit the scripts object in package.json
+
+$ heroku config:set NPM_CONFIG_PRODUCTION=false
