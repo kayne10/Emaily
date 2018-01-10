@@ -14,3 +14,5 @@ This will install dependencies to disk on Heroku
 To accomplish this, edit the scripts object in package.json
 
 $ heroku config:set NPM_CONFIG_PRODUCTION=false
+
+$ heroku logs
