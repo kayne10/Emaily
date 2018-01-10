@@ -29,7 +29,7 @@ app.use(passport.session());
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
 
-if (process.env.NODE_ENV === 'produciton') {
+if (process.env.NODE_ENV === 'production') {
   // Express serves produciton assets
   app.use(express.static('client/build'));
 
