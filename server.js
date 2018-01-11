@@ -7,6 +7,7 @@ const bodyParser = require('body-parser');
 const keys = require('./config/keys');
 //execute middleware
 require('./models/User');
+require('./models/Survey');
 require('./services/passport');
 
 //connect to mongo
@@ -28,6 +29,7 @@ app.use(passport.session());
 // load route handlers
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 if (process.env.NODE_ENV === 'production') {
   // Express serves produciton assets
