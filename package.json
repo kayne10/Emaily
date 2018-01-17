@@ -21,6 +21,7 @@
     "debug": "~2.6.3",
     "express": "~4.15.2",
     "jade": "~1.11.0",
+    "localtunnel": "^1.8.3",
     "mongoose": "^4.13.9",
     "morgan": "~1.8.1",
     "nodemon": "^1.14.8",
