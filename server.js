@@ -11,6 +11,7 @@ require('./models/Survey');
 require('./services/passport');
 
 //connect to mongo
+mongoose.Promise = global.Promise;
 mongoose.connect(keys.mongoURI);
 
 const app = express();
